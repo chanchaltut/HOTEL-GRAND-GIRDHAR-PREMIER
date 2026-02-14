@@ -52,7 +52,7 @@ const Hero = () => {
                 </div>
 
                 {/* Scroll Indicator - Bottom Center */}
-                <div className="absolute bottom-3 xs:bottom-4 sm:bottom-5 md:bottom-6 lg:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-1.5 xs:gap-2">
+                <div className="absolute bottom-2 xs:bottom-8 sm:bottom-6 md:bottom-4 lg:bottom-2 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-1.5 xs:gap-2">
                     <div className="w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border-2 border-white flex items-center justify-center">
                         <svg
                             className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white animate-bounce"

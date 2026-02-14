@@ -71,5 +71,59 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  /* Luxury Damask Pattern Background */
+  .pattern-bg {
+    position: relative;
+    isolation: isolate; /* Creates a new stacking context */
+  }
+
+  /* Dark theme damask pattern - subtle gradient overlay */
+  .dark .pattern-bg {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(139, 111, 71, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+    background-size: 800px 800px, 600px 600px, 900px 900px;
+  }
+
+  /* Light theme damask pattern */
+  .light .pattern-bg {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(139, 111, 71, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(139, 111, 71, 0.06) 0%, transparent 50%);
+    background-size: 800px 800px, 600px 600px, 900px 900px;
+  }
+
+  /* Ornate damask pattern overlay using SVG with scrollwork */
+  .pattern-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 400px 400px;
+    background-repeat: repeat;
+    pointer-events: none;
+    z-index: -1; /* Behind all content */
+  }
+
+  /* Ensure all direct children are above the pattern */
+  .pattern-bg > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .dark .pattern-bg::before {
+    opacity: 0.12; /* Reduced opacity for subtlety */
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='damask-dark' x='0' y='0' width='400' height='400' patternUnits='userSpaceOnUse'%3E%3Cg opacity='0.3'%3E%3Cpath d='M200 0 L300 100 L200 200 L100 100 Z' fill='none' stroke='%23D4AF37' stroke-width='1'/%3E%3Cpath d='M0 200 L100 300 L200 200 L100 100 Z' fill='none' stroke='%23D4AF37' stroke-width='1'/%3E%3Cpath d='M200 200 L300 300 L200 400 L100 300 Z' fill='none' stroke='%23D4AF37' stroke-width='1'/%3E%3Cpath d='M400 200 L300 300 L200 200 L300 100 Z' fill='none' stroke='%23D4AF37' stroke-width='1'/%3E%3C/g%3E%3Cg opacity='0.25'%3E%3Cpath d='M200 100 Q240 140 200 180 Q160 140 200 100' fill='none' stroke='%23D4AF37' stroke-width='0.8'/%3E%3Cpath d='M100 200 Q140 240 180 200 Q140 160 100 200' fill='none' stroke='%23D4AF37' stroke-width='0.8'/%3E%3Cpath d='M300 200 Q260 160 220 200 Q260 240 300 200' fill='none' stroke='%23D4AF37' stroke-width='0.8'/%3E%3Cpath d='M200 300 Q160 260 200 220 Q240 260 200 300' fill='none' stroke='%23D4AF37' stroke-width='0.8'/%3E%3C/g%3E%3Cg opacity='0.2'%3E%3Cpath d='M200 50 Q220 100 200 150 Q180 100 200 50' fill='none' stroke='%23D4AF37' stroke-width='0.5'/%3E%3Cpath d='M50 200 Q100 220 150 200 Q100 180 50 200' fill='none' stroke='%23D4AF37' stroke-width='0.5'/%3E%3Cpath d='M350 200 Q300 180 250 200 Q300 220 350 200' fill='none' stroke='%23D4AF37' stroke-width='0.5'/%3E%3Cpath d='M200 350 Q180 300 200 250 Q220 300 200 350' fill='none' stroke='%23D4AF37' stroke-width='0.5'/%3E%3C/g%3E%3Ccircle cx='200' cy='200' r='30' fill='none' stroke='%23D4AF37' stroke-width='0.4' opacity='0.15'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23damask-dark)'/%3E%3C/svg%3E");
+  }
+
+  .light .pattern-bg::before {
+    opacity: 0.15; /* Reduced opacity for subtlety */
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='damask-light' x='0' y='0' width='400' height='400' patternUnits='userSpaceOnUse'%3E%3Cg opacity='0.4'%3E%3Cpath d='M200 0 L300 100 L200 200 L100 100 Z' fill='none' stroke='%238B6F47' stroke-width='1'/%3E%3Cpath d='M0 200 L100 300 L200 200 L100 100 Z' fill='none' stroke='%238B6F47' stroke-width='1'/%3E%3Cpath d='M200 200 L300 300 L200 400 L100 300 Z' fill='none' stroke='%238B6F47' stroke-width='1'/%3E%3Cpath d='M400 200 L300 300 L200 200 L300 100 Z' fill='none' stroke='%238B6F47' stroke-width='1'/%3E%3C/g%3E%3Cg opacity='0.3'%3E%3Cpath d='M200 100 Q240 140 200 180 Q160 140 200 100' fill='none' stroke='%238B6F47' stroke-width='0.8'/%3E%3Cpath d='M100 200 Q140 240 180 200 Q140 160 100 200' fill='none' stroke='%238B6F47' stroke-width='0.8'/%3E%3Cpath d='M300 200 Q260 160 220 200 Q260 240 300 200' fill='none' stroke='%238B6F47' stroke-width='0.8'/%3E%3Cpath d='M200 300 Q160 260 200 220 Q240 260 200 300' fill='none' stroke='%238B6F47' stroke-width='0.8'/%3E%3C/g%3E%3Cg opacity='0.25'%3E%3Cpath d='M200 50 Q220 100 200 150 Q180 100 200 50' fill='none' stroke='%238B6F47' stroke-width='0.5'/%3E%3Cpath d='M50 200 Q100 220 150 200 Q100 180 50 200' fill='none' stroke='%238B6F47' stroke-width='0.5'/%3E%3Cpath d='M350 200 Q300 180 250 200 Q300 220 350 200' fill='none' stroke='%238B6F47' stroke-width='0.5'/%3E%3Cpath d='M200 350 Q180 300 200 250 Q220 300 200 350' fill='none' stroke='%238B6F47' stroke-width='0.5'/%3E%3C/g%3E%3Ccircle cx='200' cy='200' r='30' fill='none' stroke='%238B6F47' stroke-width='0.4' opacity='0.2'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23damask-light)'/%3E%3C/svg%3E");
+  }
 }
 

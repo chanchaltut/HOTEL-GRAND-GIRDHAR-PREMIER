@@ -50,7 +50,7 @@ const CheckAvailability = () => {
     }
 
     return (
-        <section className={`w-full ${isDark ? 'bg-[#0F0F0E]' : 'bg-[#FAF9F6]'} py-10 xs:py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 2xl:py-28`}>
+        <section className={`w-full pattern-bg ${isDark ? 'bg-[#0F0F0E]' : 'bg-[#FAF9F6]'} py-10 xs:py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 2xl:py-28`}>
             <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
                 {/* REAL-TIME AVAILABILITY Badge */}
                 <div className="flex justify-center mb-4 xs:mb-5 sm:mb-6">

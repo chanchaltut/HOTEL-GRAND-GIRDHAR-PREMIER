@@ -6,7 +6,7 @@ const Footer = () => {
     const isDark = theme === 'dark'
     
     return (
-        <footer className={`w-full ${isDark ? 'bg-[#0F0F0E]' : 'bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'}`}>
+        <footer className={`w-full pattern-bg ${isDark ? 'bg-[#0F0F0E]' : 'bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'}`}>
             <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16 xl:py-18 2xl:py-20">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xs:gap-7 sm:gap-8 md:gap-9 lg:gap-10 xl:gap-12 2xl:gap-14 mb-8 xs:mb-9 sm:mb-10 md:mb-11 lg:mb-12">
