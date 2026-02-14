@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '330px',
+      'sm': '420px',
+      'md': '540px',
+      'lg': '768px',
+      'xl': '1000px',
+      '2xl': '1200px',
+      '3xl': '1400px',
+    },
     extend: {
       fontFamily: {
         'serif': ['Playfair Display', 'Georgia', 'serif'],

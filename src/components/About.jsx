@@ -45,28 +45,28 @@ const About = () => {
     ]
 
     return (
-        <section id="about" className={`w-full ${isDark ? 'bg-[#0F0F0E]' : 'bg-[#FAF9F6]'} py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8`}>
+        <section id="about" className={`w-full ${isDark ? 'bg-[#0F0F0E]' : 'bg-[#FAF9F6]'} py-10 xs:py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 2xl:py-28 px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12`}>
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xs:gap-7 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 items-center">
                     {/* Left Section - Text Content */}
-                    <div className="space-y-6 md:space-y-8">
+                    <div className="space-y-4 xs:space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8">
                         {/* Header */}
-                        <div className="text-[#D4AF37] text-xs md:text-sm font-sans uppercase tracking-wider font-medium">
+                        <div className="text-[#D4AF37] text-[10px] xs:text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base font-sans uppercase tracking-wider font-medium">
                             ABOUT OUR HOTEL
                         </div>
 
                         {/* Title */}
                         <div>
-                            <h2 className={`${isDark ? 'text-white' : 'text-gray-900'} font-serif text-4xl md:text-5xl lg:text-6xl font-normal mb-3 pb-2 border-b border-[#D4AF37] inline-block`}>
+                            <h2 className={`${isDark ? 'text-white' : 'text-gray-900'} font-serif text-2xl xs:text-3xl sm:text-3.5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-normal mb-2 xs:mb-2.5 sm:mb-3 pb-1.5 xs:pb-2 border-b border-[#D4AF37] inline-block`}>
                                 About Hotel Grand Girdhar Premier
                             </h2>
-                            <p className="text-[#D4AF37] font-sans text-base md:text-lg mt-4">
+                            <p className="text-[#D4AF37] font-sans text-sm xs:text-sm sm:text-base md:text-base lg:text-lg xl:text-xl 2xl:text-xl mt-3 xs:mt-3.5 sm:mt-4">
                                 Your Gateway to Indore's Premier Hospitality
                             </p>
                         </div>
 
                         {/* Descriptive Text */}
-                        <div className={`space-y-4 ${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base leading-relaxed`}>
+                        <div className={`space-y-3 xs:space-y-3.5 sm:space-y-4 ${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg leading-relaxed`}>
                             <p>
                                 Hotel Grand Girdhar Premier is a 4-star luxury property located in the heart of Indore at 57-A Medanta Main Road, Vijay Nagar. Established with a vision to provide world-class hospitality, our hotel has been serving guests since its inception, combining traditional Indian warmth with modern amenities.
                             </p>
@@ -79,17 +79,19 @@ const About = () => {
                         </div>
 
                         {/* Features Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6 pt-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 xs:gap-4.5 sm:gap-5 md:gap-6 pt-3 xs:pt-3.5 sm:pt-4">
                             {features.map((feature, index) => (
-                                <div key={index} className="flex items-start gap-3">
+                                <div key={index} className="flex items-start gap-2 xs:gap-2.5 sm:gap-3">
                                     <div className="text-[#D4AF37] flex-shrink-0 mt-0.5">
-                                        {feature.icon}
+                                        <svg className="w-5 h-5 xs:w-5.5 xs:h-5.5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            {feature.icon.props.children}
+                                        </svg>
                                     </div>
                                     <div>
-                                        <h3 className={`${isDark ? 'text-white' : 'text-gray-900'} font-sans font-semibold text-sm md:text-base mb-1`}>
+                                        <h3 className={`${isDark ? 'text-white' : 'text-gray-900'} font-sans font-semibold text-xs xs:text-sm sm:text-sm md:text-base mb-0.5 xs:mb-1`}>
                                             {feature.title}
                                         </h3>
-                                        <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-xs md:text-sm leading-relaxed`}>
+                                        <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-[10px] xs:text-xs sm:text-xs md:text-sm leading-relaxed`}>
                                             {feature.description}
                                         </p>
                                     </div>
@@ -98,12 +100,12 @@ const About = () => {
                         </div>
 
                         {/* CTA Button */}
-                        <div className="pt-6">
+                        <div className="pt-4 xs:pt-5 sm:pt-6">
                             <a 
                                 href="https://maps.app.goo.gl/C7FNAC6xEY8sp5Jd7" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="inline-block bg-[#D4AF37] text-white px-8 md:px-10 py-3.5 md:py-4 rounded-lg font-sans font-semibold text-sm md:text-base hover:bg-[#C19B2A] transition-colors shadow-md"
+                                className="inline-block bg-[#D4AF37] text-white px-6 xs:px-7 sm:px-8 md:px-10 lg:px-12 py-2.5 xs:py-3 sm:py-3.5 md:py-4 rounded-lg font-sans font-semibold text-xs xs:text-sm sm:text-sm md:text-base lg:text-base hover:bg-[#C19B2A] transition-colors shadow-md"
                             >
                                 Discover Our Location
                             </a>
@@ -111,8 +113,8 @@ const About = () => {
                     </div>
 
                     {/* Right Section - Image */}
-                    <div className="relative">
-                        <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] rounded-xl overflow-hidden shadow-lg">
+                    <div className="relative mt-6 xs:mt-7 sm:mt-8 lg:mt-0">
+                        <div className="relative w-full h-[300px] xs:h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[650px] 2xl:h-[700px] rounded-xl overflow-hidden shadow-lg">
                             <img
                                 src="/about.jpeg"
                                 alt="Hotel Grand Girdhar Premier exterior"
@@ -120,10 +122,10 @@ const About = () => {
                             />
                             
                             {/* Rating Overlay */}
-                            <div className={`absolute bottom-6 left-6 ${isDark ? 'bg-[#0F0F0E]/95' : 'bg-white/95'} backdrop-blur-sm rounded-lg px-5 py-4 shadow-xl border border-[#D4AF37]/30`}>
+                            <div className={`absolute bottom-3 xs:bottom-4 sm:bottom-5 md:bottom-6 left-3 xs:left-4 sm:left-5 md:left-6 ${isDark ? 'bg-[#0F0F0E]/95' : 'bg-white/95'} backdrop-blur-sm rounded-lg px-3 xs:px-4 sm:px-4 md:px-5 py-2.5 xs:py-3 sm:py-3.5 md:py-4 shadow-xl border border-[#D4AF37]/30`}>
                                 <div className={isDark ? 'text-white' : 'text-gray-900'}>
-                                    <div className="text-4xl md:text-5xl font-bold mb-1 leading-none text-[#D4AF37]">4★</div>
-                                    <div className={`text-xs md:text-sm font-sans mt-1 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>Premium Hotel</div>
+                                    <div className="text-2xl xs:text-3xl sm:text-3.5xl md:text-4xl lg:text-5xl font-bold mb-0.5 xs:mb-1 leading-none text-[#D4AF37]">4★</div>
+                                    <div className={`text-[10px] xs:text-xs sm:text-xs md:text-sm font-sans mt-0.5 xs:mt-1 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>Premium Hotel</div>
                                 </div>
                             </div>
                         </div>

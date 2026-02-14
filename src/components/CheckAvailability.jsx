@@ -50,35 +50,35 @@ const CheckAvailability = () => {
     }
 
     return (
-        <section className={`w-full ${isDark ? 'bg-[#0F0F0E]' : 'bg-[#FAF9F6]'} py-16 md:py-20 lg:py-24`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className={`w-full ${isDark ? 'bg-[#0F0F0E]' : 'bg-[#FAF9F6]'} py-10 xs:py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 2xl:py-28`}>
+            <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
                 {/* REAL-TIME AVAILABILITY Badge */}
-                <div className="flex justify-center mb-6">
-                    <div className="bg-[#8B6F47]/30 border border-[#D4AF37]/30 rounded-full px-4 py-1.5 flex items-center gap-2">
-                        <div className="w-2 h-2 bg-[#D4AF37] rounded-full animate-pulse"></div>
-                        <span className="text-xs md:text-sm font-sans text-[#D4AF37] font-medium">
+                <div className="flex justify-center mb-4 xs:mb-5 sm:mb-6">
+                    <div className="bg-[#8B6F47]/30 border border-[#D4AF37]/30 rounded-full px-3 xs:px-3.5 sm:px-4 py-1 xs:py-1.5 flex items-center gap-1.5 xs:gap-2">
+                        <div className="w-1.5 h-1.5 xs:w-2 xs:h-2 bg-[#D4AF37] rounded-full animate-pulse"></div>
+                        <span className="text-[10px] xs:text-xs sm:text-xs md:text-sm font-sans text-[#D4AF37] font-medium">
                             REAL-TIME AVAILABILITY
                         </span>
                     </div>
                 </div>
 
                 {/* Heading */}
-                <div className="text-center mb-4">
-                    <h2 className={`text-4xl md:text-5xl lg:text-6xl font-serif ${isDark ? 'text-white' : 'text-gray-900'} mb-3`}>
+                <div className="text-center mb-3 xs:mb-3.5 sm:mb-4">
+                    <h2 className={`text-2xl xs:text-3xl sm:text-3.5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-serif ${isDark ? 'text-white' : 'text-gray-900'} mb-2 xs:mb-2.5 sm:mb-3 px-2`}>
                         Check Availability
                     </h2>
-                    <div className="w-16 h-1 bg-[#D4AF37] mx-auto mb-6"></div>
+                    <div className="w-12 xs:w-14 sm:w-16 h-0.5 xs:h-1 bg-[#D4AF37] mx-auto mb-4 xs:mb-5 sm:mb-6"></div>
                 </div>
 
                 {/* Description */}
-                <p className={`text-center ${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-base md:text-lg max-w-2xl mx-auto mb-12`}>
+                <p className={`text-center ${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg 2xl:text-xl max-w-2xl mx-auto mb-8 xs:mb-9 sm:mb-10 md:mb-12 px-3 xs:px-4`}>
                     Select your preferred dates to see real-time availability across all our luxury accommodations.
                 </p>
 
                 {/* Main Booking Widget */}
-                <div className={`${isDark ? 'bg-[#1A1A19]' : 'bg-white'} border-2 ${isDark ? 'border-[#8B6F47]' : 'border-gray-300'} rounded-2xl overflow-hidden shadow-lg max-w-6xl mx-auto`}>
+                <div className={`${isDark ? 'bg-[#1A1A19]' : 'bg-white'} border-2 ${isDark ? 'border-[#8B6F47]' : 'border-gray-300'} rounded-xl xs:rounded-2xl overflow-hidden shadow-lg max-w-6xl mx-auto`}>
                     {/* Dark Header */}
-                    <div className="bg-[#8B6F47] px-6 md:px-8 py-4 md:py-5">
+                    <div className="bg-[#8B6F47] px-4 xs:px-5 sm:px-6 md:px-7 lg:px-8 py-3 xs:py-3.5 sm:py-4 md:py-4.5 lg:py-5">
                         <div className="flex items-center gap-3">
                             <svg
                                 className="w-5 h-5 md:w-6 md:h-6 text-white"

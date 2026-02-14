@@ -7,36 +7,36 @@ const Footer = () => {
     
     return (
         <footer className={`w-full ${isDark ? 'bg-[#0F0F0E]' : 'bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'}`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
+            <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16 xl:py-18 2xl:py-20">
                 {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12 mb-10 md:mb-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xs:gap-7 sm:gap-8 md:gap-9 lg:gap-10 xl:gap-12 2xl:gap-14 mb-8 xs:mb-9 sm:mb-10 md:mb-11 lg:mb-12">
                     {/* Logo and Description */}
-                    <div className="space-y-4">
-                        <div className="mb-4">
+                    <div className="space-y-3 xs:space-y-3.5 sm:space-y-4">
+                        <div className="mb-3 xs:mb-3.5 sm:mb-4">
                             <img 
-                                className="w-32 h-auto md:w-36" 
+                                className="w-24 h-auto xs:w-28 xs:h-auto sm:w-32 sm:h-auto md:w-36 md:h-auto lg:w-40 lg:h-auto" 
                                 src={girdharLogo} 
                                 alt="Hotel Grand Girdhar Premier Logo" 
                             />
                         </div>
-                        <p className="text-[#D4AF37] font-serif text-xl md:text-2xl font-normal mb-3">
+                        <p className="text-[#D4AF37] font-serif text-lg xs:text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-normal mb-2 xs:mb-2.5 sm:mb-3">
                             HOTEL GRAND GIRDHAR PREMIER
                         </p>
-                        <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-sm md:text-base leading-relaxed`}>
+                        <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg leading-relaxed`}>
                             Experience premium hospitality in the heart of Indore. Your gateway to luxury, comfort, and unforgettable stays.
                         </p>
                     </div>
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-[#D4AF37] font-serif text-lg md:text-xl font-normal mb-4 md:mb-6">
+                        <h3 className="text-[#D4AF37] font-serif text-base xs:text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-normal mb-3 xs:mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
                             Quick Links
                         </h3>
-                        <ul className="space-y-3">
+                        <ul className="space-y-2 xs:space-y-2.5 sm:space-y-3">
                             <li>
                                 <a 
                                     href="#about" 
-                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                                 >
                                     About Us
                                 </a>
@@ -44,7 +44,7 @@ const Footer = () => {
                             <li>
                                 <a 
                                     href="#rooms" 
-                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                                 >
                                     Rooms & Suites
                                 </a>
@@ -52,7 +52,7 @@ const Footer = () => {
                             <li>
                                 <a 
                                     href="#gallery" 
-                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                                 >
                                     Gallery
                                 </a>
@@ -60,7 +60,7 @@ const Footer = () => {
                             <li>
                                 <a 
                                     href="#testimonials" 
-                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                                 >
                                     Testimonials
                                 </a>
@@ -68,7 +68,7 @@ const Footer = () => {
                             <li>
                                 <a 
                                     href="#contact" 
-                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                                 >
                                     Contact Us
                                 </a>
@@ -78,13 +78,13 @@ const Footer = () => {
 
                     {/* Contact Information */}
                     <div>
-                        <h3 className="text-[#D4AF37] font-serif text-lg md:text-xl font-normal mb-4 md:mb-6">
+                        <h3 className="text-[#D4AF37] font-serif text-base xs:text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-normal mb-3 xs:mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
                             Contact Us
                         </h3>
-                        <ul className="space-y-3">
-                            <li className="flex items-start gap-3">
+                        <ul className="space-y-2 xs:space-y-2.5 sm:space-y-3">
+                            <li className="flex items-start gap-2 xs:gap-2.5 sm:gap-3">
                                 <svg 
-                                    className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" 
+                                    className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" 
                                     fill="none" 
                                     stroke="currentColor" 
                                     viewBox="0 0 24 24"
@@ -123,7 +123,7 @@ const Footer = () => {
                                 </svg>
                                 <a 
                                     href="tel:+917312345678" 
-                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                                 >
                                     +91 731 234 5678
                                 </a>
@@ -144,7 +144,7 @@ const Footer = () => {
                                 </svg>
                                 <a 
                                     href="mailto:info@grandgirdharpremier.com" 
-                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                                    className={`${isDark ? 'text-gray-300' : 'text-gray-700'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                                 >
                                     info@grandgirdharpremier.com
                                 </a>
@@ -154,20 +154,20 @@ const Footer = () => {
 
                     {/* Follow Us */}
                     <div>
-                        <h3 className="text-[#D4AF37] font-serif text-lg md:text-xl font-normal mb-4 md:mb-6">
+                        <h3 className="text-[#D4AF37] font-serif text-base xs:text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-normal mb-3 xs:mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
                             Follow Us
                         </h3>
-                        <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-sm md:text-base mb-4 leading-relaxed`}>
+                        <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg mb-3 xs:mb-3.5 sm:mb-4 leading-relaxed`}>
                             Stay connected with us on social media for updates and special offers.
                         </p>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-3 xs:gap-3.5 sm:gap-4">
                             <a 
                                 href="#" 
-                                className="w-10 h-10 rounded-full bg-[#8B6F47] flex items-center justify-center hover:bg-[#D4AF37] transition-colors"
+                                className="w-9 h-9 xs:w-10 xs:h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#8B6F47] flex items-center justify-center hover:bg-[#D4AF37] transition-colors"
                                 aria-label="Facebook"
                             >
                                 <svg 
-                                    className="w-5 h-5 text-white" 
+                                    className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 text-white" 
                                     fill="currentColor" 
                                     viewBox="0 0 24 24"
                                 >
@@ -180,7 +180,7 @@ const Footer = () => {
                                 aria-label="Instagram"
                             >
                                 <svg 
-                                    className="w-5 h-5 text-white" 
+                                    className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 text-white" 
                                     fill="currentColor" 
                                     viewBox="0 0 24 24"
                                 >
@@ -193,7 +193,7 @@ const Footer = () => {
                                 aria-label="Twitter"
                             >
                                 <svg 
-                                    className="w-5 h-5 text-white" 
+                                    className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 text-white" 
                                     fill="currentColor" 
                                     viewBox="0 0 24 24"
                                 >
@@ -205,23 +205,23 @@ const Footer = () => {
                 </div>
 
                 {/* Divider */}
-                <div className={`border-t ${isDark ? 'border-gray-700' : 'border-gray-300'} my-8 md:my-10`}></div>
+                <div className={`border-t ${isDark ? 'border-gray-700' : 'border-gray-300'} my-6 xs:my-7 sm:my-8 md:my-9 lg:my-10`}></div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-sm md:text-base text-center md:text-left`}>
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-3 xs:gap-3.5 sm:gap-4">
+                    <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg text-center sm:text-left`}>
                         © {new Date().getFullYear()} Hotel Grand Girdhar Premier. All rights reserved.
                     </p>
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-4 xs:gap-5 sm:gap-6">
                         <a 
                             href="#" 
-                            className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                            className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                         >
                             Privacy Policy
                         </a>
                         <a 
                             href="#" 
-                            className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-sm md:text-base hover:text-[#D4AF37] transition-colors`}
+                            className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-sans text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-lg hover:text-[#D4AF37] transition-colors`}
                         >
                             Terms & Conditions
                         </a>
